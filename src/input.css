@@ -1,0 +1,12 @@
+@font-face {
+  font-family: windsor;
+  src: url("/Windsor.ttf");
+}
+
+.windsor {
+  font-family: "windsor", serif;
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
