@@ -11,5 +11,8 @@
   "license": "ISC",
   "devDependencies": {
     "tailwindcss": "^3.0.16"
+  },
+  "dependencies": {
+    "circletype": "^2.3.0"
   }
 }

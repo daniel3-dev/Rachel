@@ -11,6 +11,8 @@
     <!--
       TODO
         - Add texture / pattern to section one hero
+        - Get custom JS working (circletype)
+        - Make 'SHOOT FOR THE STARS' spin inside circle
     -->
     <section class="bg-green-900 w-screen h-screen overflow-hidden">
       <nav>
@@ -34,12 +36,21 @@
             alt="Rachel"
             class="w-4/5 mt-6 absolute bottom-0 right-0 bg-red-400 rounded-t-full pt-4 z-0"
           />
-          <h1 class="windsor mt-64 z-10 relative text-7xl">
+          <h1 class="windsor mt-16 z-10 relative text-7xl">
             Rachel <br />
             Young
           </h1>
         </div>
+        <div
+          class="bg-amber-400 w-36 h-36 -ml-20 z-10 relative mt-16 flex items-center justify-center rounded-full"
+        >
+          <p class="windsor text-4xl">RY</p>
+          <h2 id="demo1" class="font-bold">
+            SHOOT FOR THE STARS SHOOT FOR THE STARS
+          </h2>
+        </div>
       </div>
     </section>
+    <script src="circletype.min.js"></script>
   </body>
 </html>
