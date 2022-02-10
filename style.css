@@ -1,0 +1,50 @@
+@font-face {
+  font-family: windsor;
+  src: url('/Windsor.ttf');
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  width: 100%;
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
+nav {
+  color: #fff;
+  padding: 1rem;
+  margin: 0 auto;
+  width: 85%;
+  align-items: center;
+  justify-content: space-between;
+}
+
+nav h1 {
+  font-size: 2.25rem;
+  line-height: 2.5rem;
+}
+
+nav p {
+  margin-left: 3vw;
+  font-weight: bold;
+}
+
+.windsor {
+  font-family: 'windsor', serif;
+}
+
+.flex {
+  display: flex;
+}
+
+.one {
+  background-color: #14532d;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
