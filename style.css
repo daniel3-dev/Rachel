@@ -3,6 +3,8 @@
   src: url('/Windsor.ttf');
 }
 
+/*################################ Base Styles ################################*/
+
 * {
   margin: 0;
   padding: 0;
@@ -18,10 +20,14 @@ body {
 nav {
   color: #fff;
   padding: 1rem;
-  margin: 0 auto;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
   width: 85%;
   align-items: center;
   justify-content: space-between;
+  position: absolute;
 }
 
 nav h1 {
@@ -34,6 +40,8 @@ nav p {
   font-weight: bold;
 }
 
+/*############################## Utility Classes ##############################*/
+
 .windsor {
   font-family: 'windsor', serif;
 }
@@ -42,9 +50,15 @@ nav p {
   display: flex;
 }
 
+/*################################ Section One ################################*/
+
 .one {
   background-color: #14532d;
   width: 100vw;
   height: 100vh;
   overflow: hidden;
+}
+
+.one-inner {
+  background-color: red;
 }
