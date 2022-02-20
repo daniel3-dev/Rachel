@@ -12,11 +12,14 @@
       TODO
         - Add texture / pattern to section one hero
         - Get custom JS working (circletype)
-        - Make 'SHOOT FOR THE STARS' spin inside circle
+        x Make 'SHOOT FOR THE STARS' spin inside circle
+        - Fix 'SHOOT FOR THE STARS' getting cut off
+        - Make 'SHOOT FOR THE STARS' spin the opposite direction
         - Add gitignore
         - Add README
+        - Logo for Rachel
 
-        Organised CSS, minor update
+        Finished section one
     -->
     <section class="one">
       <nav class="flex">
@@ -31,9 +34,39 @@
       </nav>
       <div class="one-inner">
         <div class="portrait"></div>
-        <h1 class="windsor">Rachel Young</h1>
+        <div class="portrait-details">
+          <h1 class="windsor">Rachel <br />Young</h1>
+          <div class="circle">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+              x="0px"
+              y="0px"
+              width="300px"
+              height="300px"
+              viewBox="0 0 300 300"
+              enable-background="new 0 0 300 300"
+              xml:space="preserve"
+            >
+              <defs>
+                <path
+                  id="circlePath"
+                  d=" M 150, 150 m -60, 0 a 60,60 0 0,1 120,0 a 60,60 0 0,1 -120,0 "
+                />
+              </defs>
+              <circle cx="150" cy="100" r="75" fill="none" />
+              <g>
+                <use xlink:href="#circlePath" fill="none" />
+                <text fill="#000">
+                  <textPath xlink:href="#circlePath">
+                    SHOOT FOR THE STARS SHOOT FOR THE STARS
+                  </textPath>
+                </text>
+              </g>
+            </svg>
+          </div>
+        </div>
       </div>
     </section>
-    <script src="circletype.min.js"></script>
   </body>
 </html>

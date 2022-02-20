@@ -1,6 +1,23 @@
+/*################################ Custom Fonts ###############################*/
+
 @font-face {
   font-family: windsor;
-  src: url('/Windsor.ttf');
+  src: url('fonts/Windsor.ttf');
+}
+
+@font-face {
+  font-family: poppins;
+  src: url('fonts/Poppins-Medium.ttf');
+}
+
+@font-face {
+  font-family: poppinsBold;
+  src: url('fonts/Poppins-Bold.ttf');
+}
+
+@font-face {
+  font-family: poppinsBlack;
+  src: url('fonts/Poppins-Black.ttf');
 }
 
 /*################################ Base Styles ################################*/
@@ -15,6 +32,7 @@ body {
   width: 100%;
   max-width: 100%;
   overflow-x: hidden;
+  font-family: 'poppins', sans-serif;
 }
 
 nav {
@@ -46,6 +64,14 @@ nav p {
   font-family: 'windsor', serif;
 }
 
+.poppins-bold {
+  font-family: 'poppinsBold', sans-serif;
+}
+
+.poppins-black {
+  font-family: 'poppinsBlack', sans-serif;
+}
+
 .flex {
   display: flex;
 }
@@ -54,9 +80,15 @@ nav p {
 
 .one {
   background-color: #14532d;
+
+  background-image: radial-gradient(#49855b 0.5px, transparent 0.5px),
+    radial-gradient(#49855b 0.5px, #14532d 0.5px);
+  background-size: 20px 20px;
+  background-position: 0 0, 10px 10px;
   width: 100vw;
   height: 100vh;
   overflow: hidden;
+  color: #fff;
 }
 
 .portrait {
@@ -73,4 +105,100 @@ nav p {
   bottom: 0;
   border-top-left-radius: 300px;
   border-top-right-radius: 300px;
+}
+
+.portrait-details {
+  margin-top: 30vh;
+  margin-left: 20vw;
+  position: relative;
+}
+
+.portrait-details h1 {
+  font-size: 5rem;
+}
+
+.circle {
+  width: 15vw;
+  height: 15vw;
+  border-radius: 100%;
+  background-color: #fece16;
+  margin-left: 40vw;
+  margin-top: -30vh;
+  color: #000;
+  font-weight: bold;
+}
+
+.circle text {
+  font-family: 'poppinsBlack', sans-serif;
+  font-size: 16px;
+  font-weight: bold;
+}
+
+.circle svg {
+  width: 30vw;
+  height: 30vw;
+  margin-left: -7.5vw;
+  margin-top: -7.5vw;
+
+  -webkit-animation-name: rotate;
+  -moz-animation-name: rotate;
+  -ms-animation-name: rotate;
+  -o-animation-name: rotate;
+  animation-name: rotate;
+  -webkit-animation-duration: 5s;
+  -moz-animation-duration: 5s;
+  -ms-animation-duration: 5s;
+  -o-animation-duration: 5s;
+  animation-duration: 5s;
+  -webkit-animation-iteration-count: infinite;
+  -moz-animation-iteration-count: infinite;
+  -ms-animation-iteration-count: infinite;
+  -o-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-timing-function: linear;
+  -moz-animation-timing-function: linear;
+  -ms-animation-timing-function: linear;
+  -o-animation-timing-function: linear;
+  animation-timing-function: linear;
+}
+
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate(360deg);
+  }
+  to {
+    -webkit-transform: rotate(0);
+  }
+}
+@-moz-keyframes rotate {
+  from {
+    -moz-transform: rotate(360deg);
+  }
+  to {
+    -moz-transform: rotate(0);
+  }
+}
+@-ms-keyframes rotate {
+  from {
+    -ms-transform: rotate(360deg);
+  }
+  to {
+    -ms-transform: rotate(0);
+  }
+}
+@-o-keyframes rotate {
+  from {
+    -o-transform: rotate(360deg);
+  }
+  to {
+    -o-transform: rotate(0);
+  }
+}
+@keyframes rotate {
+  from {
+    transform: rotate(360deg);
+  }
+  to {
+    transform: rotate(0);
+  }
 }
